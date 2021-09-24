@@ -52,7 +52,7 @@ void BMX055_Init()
   setRegister(ADD_MAG, 0x51, 0x04); // No. of Repetitions for X-Y Axis = 9
   setRegister(ADD_MAG, 0x52, 0x16); // No. of Repetitions for Z-Axis = 15
 }
-
+//=====================================================================================//
 void readAcc()
 {
   uint8_t data[DATA_NUM];
@@ -94,7 +94,7 @@ void readAcc()
   f_yAcc = s16_yAcc * ACC_LSB + f_yAcc_comp; // renge +-2g
   f_zAcc = s16_zAcc * ACC_LSB + f_zAcc_comp; // renge +-2g
 }
-
+//=====================================================================================//
 void readYaw()
 {
   uint8_t data[DATA_NUM];
